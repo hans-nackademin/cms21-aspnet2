@@ -1,0 +1,19 @@
+﻿Normaliseringsformer används vid traditionella relationsdatabaser såsom SQL Server, MySQL, Oracle, DB2...
+
+1NF - Första normaliseringsformen
+-----------------------------------------------------------------------------------------------------------------------------------
+Varje tabell ska ha en unik nyckel som identifierar varje rad ex. använda ett Id
+Inga flervärdiga attribut dvs. Name:Hans Mattin-Lassei ska bli FirstName:Hans, LastName:Mattin-Lassei 
+
+
+2NF - Andra normaliseringsformen
+------------------------------------------------------------------------------------------------------------------------------------
+Inga återupprepande kolumner eller data ex. Telefon1, Telefon2 eller Email:hans@domain.com, NormalizedEmail:HANS@DOMAIN.COM
+Dvs när vi har sådant så ska vi bryta ut det i separata tabeller/kopplingstabeller/länktabeller
+
+
+3NF - Tredje normaliseringsformen
+------------------------------------------------------------------------------------------------------------------------------------
+Alla kolumner måste vara härledd den primary nyckeln. Vilket innebär att alla kolumner i en tabell måste ha med själva 
+"objektet"/entiteten att göra. Allt som identifierar kunden i kundtabellen, allt som har med adress att göra i adresstabellen
+

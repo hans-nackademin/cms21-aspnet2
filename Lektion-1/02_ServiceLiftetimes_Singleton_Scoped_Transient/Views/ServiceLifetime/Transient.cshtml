@@ -1,0 +1,9 @@
+﻿@using _02_ServiceLiftetimes_Singleton_Scoped_Transient.Services
+@model ITransientService
+
+<p>
+    <strong>PARENT: </strong>
+    <span>@Model.GetGuid();</span>
+</p>
+
+<partial name="_TransientPartial" />

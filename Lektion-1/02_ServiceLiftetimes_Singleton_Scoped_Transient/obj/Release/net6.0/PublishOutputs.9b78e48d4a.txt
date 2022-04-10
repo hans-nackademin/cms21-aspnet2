@@ -1,0 +1,7 @@
+C:\Users\HansMattin-Lassei\Documents\utbildning\CMS21\cms21-aspnet2\Lektion-1\02_ServiceLiftetimes_Singleton_Scoped_Transient\obj\Release\net6.0\PubTmp\Out\02_ServiceLiftetimes_Singleton_Scoped_Transient.exe
+C:\Users\HansMattin-Lassei\Documents\utbildning\CMS21\cms21-aspnet2\Lektion-1\02_ServiceLiftetimes_Singleton_Scoped_Transient\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\HansMattin-Lassei\Documents\utbildning\CMS21\cms21-aspnet2\Lektion-1\02_ServiceLiftetimes_Singleton_Scoped_Transient\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\HansMattin-Lassei\Documents\utbildning\CMS21\cms21-aspnet2\Lektion-1\02_ServiceLiftetimes_Singleton_Scoped_Transient\obj\Release\net6.0\PubTmp\Out\02_ServiceLiftetimes_Singleton_Scoped_Transient.dll
+C:\Users\HansMattin-Lassei\Documents\utbildning\CMS21\cms21-aspnet2\Lektion-1\02_ServiceLiftetimes_Singleton_Scoped_Transient\obj\Release\net6.0\PubTmp\Out\02_ServiceLiftetimes_Singleton_Scoped_Transient.deps.json
+C:\Users\HansMattin-Lassei\Documents\utbildning\CMS21\cms21-aspnet2\Lektion-1\02_ServiceLiftetimes_Singleton_Scoped_Transient\obj\Release\net6.0\PubTmp\Out\02_ServiceLiftetimes_Singleton_Scoped_Transient.runtimeconfig.json
+C:\Users\HansMattin-Lassei\Documents\utbildning\CMS21\cms21-aspnet2\Lektion-1\02_ServiceLiftetimes_Singleton_Scoped_Transient\obj\Release\net6.0\PubTmp\Out\02_ServiceLiftetimes_Singleton_Scoped_Transient.pdb
