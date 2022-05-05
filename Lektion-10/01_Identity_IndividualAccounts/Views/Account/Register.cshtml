@@ -1,0 +1,47 @@
+﻿@model _01_Identity_IndividualAccounts.Models.RegisterForm
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-center">
+        <div class="col-8">
+            <form asp-action="Register" asp-route-returnUrl="@Model.ReturnUrl">
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <label asp-for="FirstName" class="form-label"></label>
+                        <input asp-for="FirstName" class="form-control">
+                        <span asp-validation-for="FirstName" class="form-text text-danger"></span>     
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label asp-for="LastName" class="form-label"></label>
+                        <input asp-for="LastName" class="form-control">
+                        <span asp-validation-for="LastName" class="form-text text-danger"></span>     
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label"></label>
+                        <input asp-for="Email" class="form-control" aria-describedby="emailHelp">
+                        <span asp-validation-for="Email" class="form-text text-danger"></span>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>      
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label asp-for="Password" class="form-label"></label>
+                        <input asp-for="Password" class="form-control" aria-describedby="passwordHelp">
+                        <span asp-validation-for="Password" class="form-text text-danger"></span>   
+                    </div>
+                    <div class="d-grid mb-3">
+                        <button type="submit" class="btn btn-primary">@ViewData["Title"]</button>
+                    </div>
+
+                    <div class="d-grid">
+                        <a asp-controller="Authentication" asp-action="SignIn">Already a member?</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

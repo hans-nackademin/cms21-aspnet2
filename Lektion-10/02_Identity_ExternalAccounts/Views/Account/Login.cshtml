@@ -1,0 +1,63 @@
+﻿@model _02_Identity_ExternalAccounts.Models.LoginForm
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-center">
+        <div class="col-5">
+            <form asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl">
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="form-control" aria-describedby="emailHelp">
+                    <span asp-validation-for="Email" class="form-text text-danger"></span>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>      
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label"></label>
+                    <input asp-for="Password" class="form-control" aria-describedby="passwordHelp">
+                    <span asp-validation-for="Password" class="form-text text-danger"></span>   
+                </div>
+                <div class="form-text text-center text-danger mb-3">
+                    @ViewData["ErrorMessage"]
+                </div>
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary">@ViewData["Title"]</button>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <a asp-controller="Account" asp-action="Forgot">Forgot your password?</a>
+                    <a asp-controller="Account" asp-action="Register">Register for a new membership here</a>
+                </div>
+                @{
+                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                {
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
+                            about setting up this ASP.NET application to support logging in via external services</a>.
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <form id="external-account"  method="post" class="form-horizontal">
+                        <div>
+                            <p>
+                                @foreach (var provider in Model.ExternalLogins)
+                                {
+                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                }
+                            </p>
+                        </div>
+                    </form>
+                }
+            }
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
