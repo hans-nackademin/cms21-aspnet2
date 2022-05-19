@@ -1,0 +1,29 @@
+﻿@model Product
+
+<div class="col">
+    <div class="card">
+        <img src="@Model.ImageUrl" alt="@Model.Name">
+        <a asp-controller="Products" asp-action="Details" asp-route-id="@Model.Id" class="card-content">
+            <div class="card-menu">
+                <div class="items">
+                    @if(Model.InStock)
+                    {
+                        <i data-bs-toggle="tooltip" data-bs-placement="left" title="In stock" class="instock"></i>
+                    }
+                    else
+                    {
+                        <i data-bs-toggle="tooltip" data-bs-placement="left" title="Out of stock" class="outofstock"></i>
+                    }
+
+                    <a asp-controller="Products" asp-action="AddToWishList" asp-route-id="@Model.Id" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                    <a asp-controller="Products" asp-action="AddToCompare" asp-route-id="@Model.Id" data-bs-toggle="tooltip" data-bs-placement="left" title="Compare"><i class="fa-regular fa-shuffle"></i></a>
+                    <a asp-controller="Products" asp-action="AddToCart" asp-route-id="@Model.Id" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart"><i class="fa-regular fa-cart-shopping" ></i></a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-title">@Model.Name</div>
+            </div>
+        </a>
+        <div class="card-background"></div>
+    </div>       
+</div>

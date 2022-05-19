@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Roboto:wght@400;700&display=swap');
+/* 
+#20d3c2     Themecolor
+#f6f6f6     Light Grey
+#e3e3e3     line/bullet
+#eeeeee     Product BG
+#aaaaaa     Grey
+#64cb83     Sale
+#fe4545     hot
+#0e153d     dark blue 
+font-family: 'Play', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+.text-theme-darkblue {
+    color: #0e153d;
+}
+
+.text-theme-darkblue {
+    color: #0e153d;
+}
+
+.text-theme {
+    color: #20d3c2;
+}
+
+.bg-lightgrey {
+    background-color: #f6f6f6;
+}
+
+.theme-color {
+    background-color: #20d3c2;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #0e153d;
+}
+
+.top-menu {
+    background-color: #20d3c2;
+    color: #ffffff;
+}
+
+    .top-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+        .top-menu ul > li {
+            margin: .5rem;
+        }
+
+            .top-menu ul > li:first-child {
+                margin-left: 0;
+            }
+
+            .top-menu ul > li > ul > li {
+                margin: 0 .5rem;
+            }
+
+.search-box {
+    border-radius: 25px;
+    height: 46px;
+    position: relative;
+    margin: auto;
+    border-radius: 25px;
+}
+
+    .search-box input {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+        outline: none;
+        border: 1px solid #e3e3e3;
+        padding-left: 20px;
+        font-size: 0.9rem;
+    }
+
+        .search-box input::placeholder {
+            color: #aaaaaa;
+        }
+
+
+    .search-box .icon {
+        position: absolute;
+        top: 0;
+        right: -2px;
+        width: 50px;
+        height: 100%;
+        background-color: #20d3c2;
+        color: #ffffff;
+        border-radius: 0 25px 25px 0;
+        text-align: center;
+        line-height: 46px;
+        font-size: 1.2rem;
+    }
+
+header i {
+    font-size: 1.7rem;
+    margin-right: 10px;
+    position: relative;
+}
+
+    header i span {
+        font-size: 0.7rem !important;
+        padding: 0.4rem 0.5rem !important;
+        left: 25px;
+        margin-top: -8px;
+    }
+
+.banner {
+    background-color: #eeeeee;
+}
+
+    .banner .banner-content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+        .banner .banner-content .content-body {
+            width: 60%;
+            line-height: 1.3;
+        }
+
+.content-body .content-title {
+    font-size: 60px;
+}
+
+.text-theme-bold {
+    color: #20d3c2;
+    font-weight: 700;
+    font-size: 1.05em;
+}
+
+.menu {
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.btn-menu {
+    padding: 0.5rem;
+    background-color: #20d3c2 !important;
+    color: #ffffff !important;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .btn-menu .btn-menu-content {
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+    }
+
+    .btn-menu div i {
+        font-size: 1.5rem;
+        margin-top: 4px;
+        margin-right: 15px;
+    }
+
+.btn-light {
+    border-radius: 25px;
+    color: #20d3c2;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+}
+
+.section-title {
+    color: #0e153d;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 2.75rem;
+}
+
+    .section-title .section-subtitle {
+        margin-top: 0.75rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+.card {
+    position: absolute;
+    border-radius: 10px;
+    height: 450px;
+    width: 450px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+    .card .card-content {
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .card .card-menu {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        right: -78%;
+        bottom: 0;
+        top: 0;
+        color: #aaaaaa;
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+        .card .card-menu .items {
+            position: relative;
+            z-index: 3;
+            border-radius: 25px;
+            background-color: white;
+            display: inline-block;
+            padding: 10px;
+            font-size: 1.3rem;
+            transform: translateY(450px);
+            transition: transform 0.4s ease-in-out;
+        }
+
+            .card .card-menu .items a {
+                color: #aaaaaa;
+                text-decoration: none;
+                position: relative;
+                z-index: 4;
+            }
+
+            .card .card-menu .items i {
+                display: block;
+                margin: 1rem 0;
+            }
+
+    .card .card-body {
+        padding: 1rem;
+        transform: translateY(390px);
+        transition: transform 0.5s ease-in-out;
+        color: #ffffff;
+        height: 70px;
+        width: 100%;
+        position: absolute;
+        z-index: 5;
+    }
+
+        .card .card-body .card-title {
+            font-size: 18px;
+            position: absolute;
+            z-index: 5;
+        }
+
+    .card .card-background {
+        position: absolute;
+        height: 100%;
+        width: calc(100% + 1px);
+        background-color: #0e153d;
+        opacity: 0.94;
+        transition: 0.3s ease-in;
+        transform: translateY(390px);
+    }
+
+    .card:hover .card-menu .items {
+        transform: translateY(0px);
+    }
+
+    .card .card-menu .items a:hover {
+        color: #82D8C6;
+        text-decoration: none;
+    }
+
+    .card:hover .card-body {
+        transform: translateY(300px);
+    }
+
+    .card:hover .card-background {
+        transform: translateY(1px);
+    }
+
+
+.instock {
+    height: 21px;
+    width: 21px;
+    background-color: #82D8C6;
+    border-radius: 50%;
+}
+
+.outofstock {
+    height: 21px;
+    width: 21px;
+    background-color: #e8756d;
+    border-radius: 50%;
+}
+
+#new-arrivals .card {
+    height: 450px;
+    width: 350px;
+}
+
+    #new-arrivals .card .card-menu {
+        right: -78%;
+    }
+

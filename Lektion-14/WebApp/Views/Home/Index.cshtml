@@ -1,0 +1,14 @@
+﻿@model HomeViewModel
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<partial name="_HeaderPartial" />
+
+<partial name="_ShowcasePartial" />
+
+<partial name="_NewArrivalsPartial" model="Model.Products" />

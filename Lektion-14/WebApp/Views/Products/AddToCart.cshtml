@@ -1,0 +1,8 @@
+﻿
+<script>
+    let localStorage = window['localStorage'];  
+    localStorage.setItem('ShoppingCart', '@Html.Raw(ViewData["ShoppingCart"] as String)');
+
+    let shoppingCart = localStorage.getItem('ShoppingCart');
+    window.location.href = "@Url.Action("Index","Home")";
+</script>

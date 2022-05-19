@@ -1,0 +1,18 @@
+﻿<div><i class="fa-regular fa-user"></i> My account</div>
+<div><i class="fa-regular fa-heart"></i></div>
+<div><i class="fa-regular fa-shuffle"></i></div>
+<button class="btn position-relative">
+    <i class="fa-regular fa-bag-shopping position-relative">
+        <span id="totalQuantity" class="position-absolute translate-middle badge rounded-pill theme-color" style="top: -10px;">
+
+        </span>
+    </i> 
+    <span id="totalPrice"></span>
+</button>
+
+<script>
+    let localStorage = window['localStorage'];  
+    let shoppingCart = JSON.parse(localStorage.getItem('ShoppingCart'));
+    document.getElementById('totalQuantity').innerText = shoppingCart.TotalQuantity
+    document.getElementById('totalPrice').innerText = shoppingCart.TotalPrice
+</script>

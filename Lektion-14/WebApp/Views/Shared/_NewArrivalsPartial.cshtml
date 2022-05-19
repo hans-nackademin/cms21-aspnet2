@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Product>
+
+<div id="new-arrivals" class="new-arrivals mt-5">
+    <div class="container">
+        <div class="section-title">
+            <div>NEW <span class="text-theme">ARRIVALS</span></div>
+            <div><img src="images/wave-line.svg" alt=""></div>
+            <div class="section-subtitle">Check out our latest products from top fashion designers</div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        @foreach(var product in Model)
+        {
+            <partial name="_ProductPartial" model="product" />
+        }
+            
+        </div>
+    </div>
+</div>
